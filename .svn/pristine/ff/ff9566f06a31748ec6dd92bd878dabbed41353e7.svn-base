@@ -1,0 +1,23 @@
+<!--pages/more/more.wxml-->
+<view wx:if="{{more!==null}}">
+<van-nav-bar title="搜索结果共{{more.length}}个">
+  <van-icon name="search" slot="right" />
+</van-nav-bar>
+  <view wx:for="{{more}}" wx:key="{{item}}" class="more"  data-id="{{item.id}}" bindtap="onContent">
+      <van-card
+        tag="{{ item.sell>100?'热销':''}}"
+        desc="{{ item.describ }}"
+        price="{{ item.current }}"
+        title="{{ item.title }}"
+        thumb="http://127.0.0.1:88/lv/goods/{{ item.imgUrl }}"
+        origin-price="{{ item.original }}"
+      >
+      </van-card>
+  </view>
+</view>
+<view wx:else="{{more==null}}">
+  <van-nav-bar title="搜索结果共0个">
+  <van-icon name="search" slot="right" />
+</van-nav-bar>
+  <text>暂无产品</text>
+</view>

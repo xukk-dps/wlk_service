@@ -1,0 +1,92 @@
+
+http:
+  maxTotal: 100 #最大连接数
+  defaultMaxPerRoute: 200 # 并发数
+  connectTimeout: 5000  # 创建连接的最长时间
+  connectionRequestTimeout: 5000 #从连接池中获取到连接最长时间
+  socketTimeout: 10000 #数据传输的最长时间
+  staleConnectionCheckEnabled: true #提交请求前测试连接是否可用
+#mybatis
+mybatis:
+  type-aliases-package: com.shop.entity
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+    jdbc-type-for-null: varchar
+#mybatis mapper
+mapper:
+  not-empty: false
+  identity: MYSQL
+#mybatis pageHelper
+pagehelper:
+  auto-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
+
+###################  spring配置  ###################
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static/
+  http:
+    converters:
+      preferred-json-mapper: fastjson
+  ## redis配置
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 20000
+#    password: wlk654123
+#    cluster:
+#      nodes: 192.168.30.11:6379
+#      maxRedirects: 6
+    jedis:
+      pool:
+        max-active: 8
+        min-idle: 0
+        max-idle: 8
+        max-wait: -1
+
+  http:
+    converters:
+      preferred-json-mapper: fastjson
+
+  datasource:
+    druid:
+      username: root
+      password: root
+      url: jdbc:mysql://localhost:3306/wlk?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      max-active: 20
+      min-idle: 1
+      initial-size: 1
+      test-on-borrow: true
+  ## 邮件发送
+  mail:
+    host: smtp.126.com
+    username: xukangk188@126.com
+    password: xkk.,211314
+    properties:
+      mail:
+        default-encoding: UTF-8
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+logging:
+  config: classpath:logback-spring.xml
+
+##业务配置
+shop:
+  path:
+    ##图片路径
+    img: G:/tmp/img/

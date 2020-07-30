@@ -1,0 +1,17 @@
+jdbc.driverClass=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/wlk?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&testOnBorrow=true&serverTimezone=GMT%2B8
+jdbc.user=root
+jdbc.password=root
+#c3p0
+jdbc.maxPoolSize=50
+jdbc.minPoolSize=10
+jdbc.maxStatements=100
+jdbc.testConnection=true
+# \u901A\u7528Mapper\u914D\u7F6E
+mapper.plugin=tk.mybatis.mapper.generator.MapperPlugin
+mapper.Mapper=tk.mybatis.mapper.common.Mapper
+targetModelPackage=com.shop.entity
+targetJavaProject=src/main/java
+targetMapperPackage=com.shop.mapper
+targetResourcesProject=src/main/resources
+targetXMLPackage=mapper/

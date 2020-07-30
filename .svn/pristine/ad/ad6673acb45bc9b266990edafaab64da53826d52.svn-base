@@ -1,0 +1,73 @@
+<view class="cartWrap">
+  <view class="J-shopping-cart-empty" hidden="{{iscart}}">
+  <view class="shopping-cart-empty">
+    <view class="bg"></view>
+    <view class="cart">
+      <!-- <image src="../images/lanzi.png"></image> -->
+    </view>
+    <view  class="nocart">
+       <image class="lanzi" src="../images/lanzi.png"></image> 
+       <text class='empty-text'>购物车空空如也~</text>
+    </view>
+    <p></p>
+    <!-- <text  class="button-primary">
+       去抢购 
+    </text> -->
+     <view class="go"  bindtap='goShop'>去抢购 </view>
+  </view>
+</view>
+<view class="scroll" hidden="{{hidden}}">
+  <scroll-view class="scroll" scroll-y="true">
+    <view class="separate"></view>
+    <view wx:for="{{carts}}" wx:key="{{item.id}}" >
+      <view class="cart_container">
+        <view wx:if="{{!item.isSelect}}">
+          <icon class="item-select" bindtap="switchSelect" data-index="{{index}}" data-id="{{index}}" type="circle" size="20"></icon>
+        </view>
+        <view wx:elif="{{item.isSelect}}">
+          <icon class="item-select" bindtap="switchSelect" data-index="{{index}}" data-id="{{index}}" type="success" color="#f0145a" size="20"></icon>
+        </view>
+        <view class="box">
+           <image class="item-image" src="{{item.imgUrl}}"></image>
+        </view>
+       
+
+        <view class="column">
+          <text class="title">{{item.title}}</text>
+          <view class="row">
+            <text class="sku-price">￥{{item.current}}</text>
+            <view class="sku">
+
+              <view class="select">
+                <text class="jian" bindtap="delCount" data-id="{{item.id}}" data-count="{{item.count}}" data-index="{{index}}">-</text>
+                <view class="jian">{{item.count}}</view>
+                <text class="jian" data-id="{{item.id}}" bindtap="addCount" data-index="{{index}}">+</text>
+              </view>
+            </view>
+          </view>
+
+        </view>
+      </view>
+      <view class="separate"></view>
+    </view>
+  </scroll-view>
+</view>
+<view class="bottom_total" hidden="{{hidden}}">
+  <view class="bottom_line"></view>
+
+  <view class="row">
+
+    <view wx:if="{{!isAllSelect}}">
+      <icon class="item-allselect" bindtap="allSelect" type="circle" size="20"></icon>
+    </view>
+    <view wx:elif="{{isAllSelect}}">
+      <icon class="item-allselect" bindtap="allSelect" type="success" color="#f0145a" size="20"></icon>
+    </view>
+    <text class="small_text">全选</text>
+    <text>合计:￥ </text>
+    <text class="price">{{totalMoney}}</text>
+    <!-- <view class="button-red" bindtap="toBuy" >去结算</view> -->
+    <view class="button-red"  bindtap="onText">去结算</view>
+  </view>
+</view>
+</view>

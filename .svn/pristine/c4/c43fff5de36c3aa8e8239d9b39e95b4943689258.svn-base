@@ -1,0 +1,20 @@
+<view class="cartWrap">
+<image class='fabiao' src='/components/images/swiper1.png' bindtap='fabiao'></image>
+<view class='zhezhao' hidden="{{flag}}">
+  <!--这是一个遮罩层，在框弹出后遮住框外区域-->
+  </view>
+  <!--这是下拉框中的内容，一个文本框和一个按钮，按钮触发拉起事件，表示拉起下拉框-->
+  <view class="test3 {{test=='test1'?'test1':'test2'}}" style='display:{{yesorno}};'>
+   <view class="cart_container" style="background: #eae9e9;">
+      <scroll-view class="scroll" scroll-y="true">
+        <view class="viewSty" wx:for="{{carts}}" wx:key="{{item.id}}" >
+          <view bindtap='laqi' data-gid='{{item.id}}' class="sendAddress cart_container">
+              <text  style="margin-left: 2%;" >{{item.title}}</text>
+          </view>
+          
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+</view>

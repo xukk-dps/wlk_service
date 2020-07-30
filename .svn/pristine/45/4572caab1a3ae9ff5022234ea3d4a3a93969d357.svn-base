@@ -1,0 +1,135 @@
+.mine{
+  position: relative;
+}
+.bg{
+  height: 350rpx;
+  background-color: #ed536f;
+  display: flex;
+  align-items: center;
+  padding:0 40rpx;
+}
+.bgWrap{
+  background-color: #f3f3f3;
+  height: 800rpx;
+   position: relative;
+   z-index: 2rpx;
+}
+.img{
+  width: 60px;
+  height: 60px;
+}
+.container{
+  color: white;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+  line-height: 10px;
+}
+.myOrder{
+  background-color: white;
+   width: 90%;
+   margin: 0 auto;
+   border-radius: 10rpx;
+   z-index: 999rpx;
+   position: absolute;
+   top: -20px;
+   left: 5%;
+}
+.order{
+   display: flex;
+   justify-content: space-between;
+   font-size: 34rpx;
+   padding: 20rpx;
+}
+.my{
+  font-weight: bold;
+}
+.all{
+ display: flex;
+ justify-content: center;
+}
+.right{
+  width: 40rpx;
+  height: 40rpx;
+  color: #f3f3f3;
+  justify-content: center;
+   text-align: center;
+}
+.money{
+  width: 60rpx;
+  height:50rpx;
+  display: flex;
+ justify-content: center;
+}
+.imgs{
+  width: 60rpx;
+  height:50rpx;
+  display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.pay{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+}
+.payList{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 40rpx;
+}
+.letter{
+  font-size: 26rpx;
+  padding-top: 10rpx;
+}
+.serve{
+  position: relative;
+  top:230rpx;
+  background-color: white;
+   width: 85%;
+   margin: 0 auto;
+   border-radius: 15rpx;
+  font-size: 34rpx;
+   padding: 20rpx;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40rpx;
+}
+.payServe{
+  display: flex;
+  flex-direction: column;
+  width:25%;
+  margin: 20rpx 0;
+  align-items: center;
+}
+/**
+头像
+**/
+.userinfo {
+  margin-left: 30rpx;
+  margin-top: 38rpx;
+  width: 120rpx;
+  height: 120rpx;
+  background:  rgba(42, 192, 206, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 60rpx;
+}
+
+.userinfo-avatar {
+  margin-left: 2%;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.img{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}

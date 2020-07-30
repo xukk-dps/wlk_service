@@ -1,0 +1,63 @@
+<!--components/classic/classic.wxml-->
+<view class='index_tab'>
+  <scroll-view class="bottom_scroll" scroll-x="true" scroll-left="{{x}}" scroll-with-animation="{{true}}">
+    <view class='nav {{item.brand_id == type_id?"cur":""}}' wx:for="{{nav_list}}" wx:key="{{item.brand_id}}" data-id="{{item.id}}" bindtap='switchTap' data-index="{{index}}">
+      <view class="classNav">
+        <image class="money" src="{{item.imgUrl}}"></image>
+        <view class="title">{{item.brand_name}}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view>
+    <image class="hotLine" src="../images/line.png"></image>
+    <view class="list">
+      <block wx:for="{{newslist}}"  wx:for-index="idx"  wx:key="{{item}}">
+        <view class="detail" wx:if="{{idx == current}}">
+          <view wx:for="{{item.hot}}" wx:for-item="cell"  wx:key="{{cell}}">
+               
+              <view class="hot">
+    <view class="hotWrap">
+      <image class="hotImg" src="{{cell.imgUrl}}" />
+      <view class="buys">
+        <text> 已抢<text class="nums">{{cell.num}} </text>件  </text>
+        <text> 仅剩<text  class="num">{{cell.nums}}</text>件  </text>
+      </view>
+    </view>
+    <view class="container">
+      <text class="titleTop">{{cell.title}}</text>
+      <view class="shareWrap">
+        <image class="share" src="../images/share.png"></image>
+      </view>
+      
+      <view class="rank">
+        <view class="moneyWrap">
+          <text class="current">￥{{cell.current}}起</text>
+          <text class="original">门市价￥{{cell.original}}</text>
+        </view>
+        <view class="select">
+        选择规格
+        <!-- <view>-</view>
+          <text>0</text>
+          <view>+</view> -->
+        </view>
+      </view>
+      <view  class="selectWrap">
+      <view  class="selects">
+         <image class="person" src="../images/timg.jpg"></image>
+         <image class="person1" src="../images/name.png"></image>
+         <image class="person2" src="../images/timg1.jpg"></image>
+      </view>
+      <text class="numOrder">
+         刚刚下单
+      </text>
+      </view>
+    </view>
+  </view>
+
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+</view>

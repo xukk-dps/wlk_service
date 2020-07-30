@@ -1,0 +1,46 @@
+<view class="cartWrap">
+
+<image style="width: 100%;height: 225rpx;" src="/components/images/swiper1.png"></image>
+<view class="scroll" hidden="{{hidden}}">
+<!-- style="background: #eae9e9;" -->
+<view class="viewSty" wx:for="{{orders}}" wx:for-index="orderindex" >
+ <view class="cart_container" bindtap='onText' data-info="{{orders[orderindex]}}">
+    <scroll-view class="scroll" scroll-y="true">
+      <view class="viewSty" wx:for="{{orders[orderindex].productVOS}}" wx:key="{{item.id}}" >
+        <view class="cart_container">
+          <view class="box">
+            <image class="item-image" src="{{item.imgUrl}}"></image>
+          </view>
+          <view class="column">
+            <text class="title">{{item.title}}</text>
+            <view class="row">
+              <text class="sku-price">单价 ￥{{item.current}}</text>
+              <view class="sku">
+                <view class="select">
+                  <view >数量 x {{item.count}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="viewSty">
+          <view class="cart_container orderInfo">
+              <text style="margin-left: 3%;">
+                总价: {{item.proPrice}} ,    实付: {{item.proSalePrice}} 
+              </text>
+              <text style="margin-left: 3%;color:red;">
+                 {{item.status}}  
+              </text>
+          </view>
+       
+      </view>
+    </scroll-view>
+  </view>
+</view>
+</view>
+<view class="scroll" hidden="{{no_data_hidden}}">
+  <text class="bottom"  >暂无数据</text>
+</view>
+
+</view>

@@ -1,0 +1,4 @@
+<view class="box" style="margin-top: 30%;">
+     <button bindgetphonenumber="getPhoneNumber" openType="getPhoneNumber">手机号登录</button>
+</view>
+

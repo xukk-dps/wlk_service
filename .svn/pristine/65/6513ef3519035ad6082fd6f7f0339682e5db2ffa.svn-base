@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shop.mapper.ShopOrderItemMapper" >
+  <resultMap id="BaseResultMap" type="com.shop.entity.ShopOrderItem" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
+    <result column="pro_attribute" property="proAttribute" jdbcType="VARCHAR" />
+    <result column="pro_id" property="proId" jdbcType="BIGINT" />
+    <result column="pro_name" property="proName" jdbcType="VARCHAR" />
+    <result column="pro_logo" property="proLogo" jdbcType="VARCHAR" />
+    <result column="pro_price" property="proPrice" jdbcType="BIGINT" />
+    <result column="pro_sale_price" property="proSalePrice" jdbcType="BIGINT" />
+    <result column="coupon_id" property="couponId" jdbcType="BIGINT" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: wlk
+  profiles:
+#    active: local
+    active:  ${SERVER_ENV:pro} #根据系统环境变量切换配置文件
+###################  项目启动端口  ###################
+server:
+  #https监听端口
+  port:  ${serverPort:8070}
+#  custom:
+#    #http监听端口
+#    httpPort: 8443
+  servlet:
+    context-path: /shop
+#  ssl:
+#    key-store: classpath:key/www_runvp_com.jks
+#    enabled: true
+#    key-password: nifei020300
+#    key-store-type: JKS

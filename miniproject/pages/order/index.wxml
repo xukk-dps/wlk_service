@@ -1,0 +1,70 @@
+<view class="cartWrap">
+<view class='zhezhao' hidden="{{flag}}">
+  <!--这是一个遮罩层，在框弹出后遮住框外区域-->
+  </view>
+  <!--这是下拉框中的内容，一个文本框和一个按钮，按钮触发拉起事件，表示拉起下拉框-->
+  <view class="test3 {{test=='test1'?'test1':'test2'}}" style='display:{{yesorno}};'>
+   <view class="cart_container" style="background: #eae9e9;">
+      <scroll-view class="scroll" scroll-y="true">
+        <view class="viewSty" wx:for="{{addressList}}" wx:key="{{item.id}}" >
+          <view bindtap='laqi' data-address='{{item.receiveAddress}}' data-gid='{{item.id}}' class="sendAddress cart_container">
+              <text   style="margin-left: 2%;" >{{item.receiveAddress}}</text>
+          </view>
+          
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <image style="width: 100%;height: 225rpx;" src="/components/images/swiper1.png"></image>
+<view class="scroll" hidden="{{hidden}}">
+<!-- style="background: #eae9e9;" -->
+ <view class="cart_container" >
+    <scroll-view class="scroll" scroll-y="true">
+      <view class="viewSty">
+          <view  bindtap='fabiao'  class="sendAddress cart_container">
+              <text style="margin-left: 2%;">收货地址 : {{address}}</text>
+          </view>
+      </view>
+      <view class="viewSty" wx:for="{{carts}}" wx:key="{{item.id}}" >
+        <view class="cart_container">
+          <view class="box">
+            <image class="item-image" src="{{item.imgUrl}}"></image>
+          </view>
+          <view class="column">
+            <text class="title">{{item.title}}</text>
+            <view class="row">
+              <text class="sku-price">单价 ￥{{item.current}}</text>
+              <view class="sku">
+                <view class="select">
+                  <view >数量 x {{item.count}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+      <view class="viewSty">
+          <view class="cart_container orderInfo">
+              <text style="margin-left: 2%;">
+                订单信息 
+                订单号: {{orderNo}}   
+                创建时间: {{timeStart}} 
+                完成时间: {{timeExpire}}   
+
+              </text>
+          </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<view class="bottom_total" hidden="{{hidden}}">
+  <view class="bottom_line"></view>
+  <view class="row">
+    <text>合计:￥ </text>
+    <text class="price">{{totalMoney}}</text>
+    <!-- <view class="button-red" bindtap="toBuy" >去结算</view> -->
+    <view class="button-red"  bindtap="toPay">去支付</view>
+  </view>
+</view>
+</view>

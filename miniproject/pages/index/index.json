@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "物联卡直购",
+  "usingComponents": {
+    "nav":"../../components/nav/nav",
+    "swiper": "../../components/swiper/swiper",
+    "classic": "../../components/classic/classic",
+    "van-search": "@vant/weapp/search/index",
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-loading": "@vant/weapp/loading/index"
+  }
+}

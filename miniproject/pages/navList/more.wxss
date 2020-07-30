@@ -1,0 +1,28 @@
+/* pages/more/more.wxss */
+.more{
+  margin: 0.8rem 0;
+}
+.profit{
+  margin-right: 1rem;
+}
+.return{
+  background-color: red;
+  padding:0  0.1rem;
+  color: white;
+}
+.profits{
+  color: red;
+  padding-left: 0.2rem;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.sell{
+  color: rgb(189, 173, 173);
+}
+.share{
+  background-color: rgb(178, 214, 47);
+  border-radius: 0.3rem;
+  padding:0.1rem.2rem;
+}

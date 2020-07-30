@@ -1,0 +1,53 @@
+{
+  "pages": [
+    
+   
+    "pages/main/index",
+    "pages/register/index",
+    "pages/index/index",
+    "pages/login/index",
+    "pages/orders/index",
+    "pages/addressList/index",
+    "pages/addressAdd/index",
+    "pages/history/index",
+    "pages/order/index",
+    "pages/address/index",
+    "pages/mine/mine",
+    "pages/cart/cart",
+    "pages/text/text"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "components/images/home1.png",
+        "selectedIconPath": "components/images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "components/images/cart1.png",
+        "selectedIconPath": "components/images/cart.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "components/images/my1.png",
+        "selectedIconPath": "components/images/my.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

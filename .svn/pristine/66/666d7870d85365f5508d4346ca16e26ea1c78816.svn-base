@@ -1,0 +1,42 @@
+/* components/nav/nav.wxss */
+.navImg{
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  z-index: 999rpx;
+}
+.nav{
+  position: relative;
+  padding-left: 20rpx;
+}
+.navTitle{
+  font-family: "PingFangSC-Regular" !important;
+  font-weight: 450;
+  color:#000;
+  font-size:15px;
+}
+.buy{
+  position: absolute;
+  width: 100rpx;
+ height: 40rpx;
+ border-radius: 10px;
+ background-color: #f8e71d;
+ text-align: center;
+ top: 70rpx;
+ font-size: 28rpx;
+}
+.name{
+  position: absolute;
+  width:240rpx;
+ height: 70rpx;
+ border: 2px solid #eaeaea;
+ border-radius: 30px;
+ top: -60rpx;
+ display: flex;
+ align-items: center;
+ justify-content:flex-end;
+ z-index:-1;
+}
+.names{
+ padding-right: 30rpx; 
+}

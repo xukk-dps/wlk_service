@@ -1,0 +1,188 @@
+/* components/classic/classic.wxss */
+.index_tab .bottom_scroll{
+  width:100%;
+  white-space:nowrap;
+  overflow:hidden;
+  margin-top: 30rpx;
+}
+.index_tab .bottom_scroll .nav{
+  width:20%;
+  display:inline-block;
+  white-space:normal;
+  text-align:center;
+  font-size: 26rpx;
+}
+.money{
+   width: 70rpx;
+  height:  70rpx;
+}
+.title{
+  margin: 10rpx;
+  font-size: 28rpx;
+}
+.hotLine{
+   height: 30rpx;
+   display: flex;
+  width: 150rpx;
+  justify-content: center;
+  margin: 0 auto;
+}
+.classNav{
+  margin-right: 20rpx;
+}
+.hot{
+  position: relative;
+  margin: 0.8rem;
+  border-bottom: 1px solid rgb(241, 235, 235);
+  display: flex;
+  /* justify-content: space-between; */
+  /* flex-direction: column; */
+}
+.hotImg{
+  width:300rpx;
+  height:250rpx;
+}
+.moneyWrap{
+  display: flex;
+  flex-direction: column;
+  margin:0 0.2rem;
+}
+.current{
+  color: coral;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "PingFangSC-Regular" !important;
+  font-weight: 450;
+  font-size:14px;
+}
+.original{
+  text-decoration: line-through;
+ font-size: 20rpx;
+  color: rgba(219, 219, 219, 0.933);
+  margin-left: 0.2rem;
+}
+.profit{
+  margin-right: 1rem;
+}
+.return{
+  background-color: red;
+  padding:0  0.1rem;
+  color: white;
+}
+.profits{
+  color: red;
+  padding-left: 0.2rem;
+}
+.sell{
+  position: absolute;
+  z-index: 99;
+  background-color:rgba(146, 137, 137, 0.933);
+  opacity: 0.8;
+  width: 4.2rem;
+  height: 1.3rem;
+  right: 0;
+  color: #ffffff;
+}
+
+
+
+.buys{
+  margin: 20rpx 0;
+   border: 1px solid #929292;
+   border-radius: 30rpx;
+   display: flex;
+   justify-content:space-around;
+   padding: 10rpx;
+   font-size: 24rpx;
+}
+.num{
+  color: #130505;
+  font-weight: bold;
+}
+.num{
+  color: #ff5876;
+  font-weight: bold;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   margin-left: 24rpx;
+   width: 100%;
+
+}
+.titleTop{
+  width: 100%;
+  font-weight: bold;
+  font-size: 38rpx;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+}
+.shareWrap{
+  width: 100%;
+  justify-content: flex-end;
+  right: 0;
+}
+.share{
+  width:50rpx;
+  height:50rpx;
+  top: 50rpx;
+  float: right;
+ position: relative;
+}
+.rank{
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100rpx;
+}
+.select{
+  background-color: #ed6095;
+  color: white;
+  text-align: center;
+   border-radius: 30rpx;
+   font-size: 26rpx;
+   padding: 10rpx 15rpx;
+   height: 40rpx;
+}
+.selects{
+   position: relative;
+}
+.person{
+   position: absolute;
+   width:40rpx;
+  height:40rpx;
+  z-index: 10;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  left: -5rpx;
+}
+.person1{
+   width:40rpx;
+  height:40rpx;
+  position: relative;
+  z-index: 6;
+  left: -20rpx;
+  top: 30rpx;
+}
+.person2{
+  width:40rpx;
+  height:40rpx;
+  position: relative;
+  z-index: 9;
+  left: -40rpx;
+  top: 30rpx;
+}
+.selectWrap{
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  display: flex;
+}
+.numOrder{
+  color: #929292;
+  font-size: 26rpx;
+}

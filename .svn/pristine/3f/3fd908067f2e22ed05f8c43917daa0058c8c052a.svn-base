@@ -1,0 +1,12 @@
+<!--components/swiper/swiper.wxml-->
+<view class="container">
+  <swiper  autoplay="true" >
+      <swiper-item wx:for="{{swiper}}" wx:key="item" data-id="{{item.id}}" bind:tap="onSwiper" bindtap='onText'>
+          <image
+             class="swiper"
+             mode="scaleToFill"
+              src="{{item.imgUrl}}"  >
+          </image>
+      </swiper-item>
+  </swiper>
+</view>

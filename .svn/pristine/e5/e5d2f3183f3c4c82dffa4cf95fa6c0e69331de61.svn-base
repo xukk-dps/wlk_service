@@ -1,0 +1,19 @@
+<scroll-view class="scroll" scroll-y="true">
+  <view wx:for="{{addressList}}">
+<view class="product-name-wrap">
+  <view class="ui-list-item-info">{{item.receiveName}}
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text> {{item.receivePhone}}
+  </view>
+  <view class="ui-list-item-address">
+    {{item.receiveAddress}}<text class="ui-list-item-del" data-aid="{{item.id}}" bindtap="delAddress">删除</text>
+  </view>
+
+  <view class="separate"></view>
+</view>
+
+</view>
+
+</scroll-view>
+<view  bindtap="addAddress">
+   <button class='submit' >新增地址</button>
+</view>

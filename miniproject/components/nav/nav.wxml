@@ -1,0 +1,11 @@
+<!--components/nav/nav.wxml-->
+<view class="nav">
+  <image class="navImg" src="images/name.png"></image>
+  <view class="buy" >
+    <text>直购</text>
+    <text class="name">
+      <text class="names">飞</text>
+    </text>
+  </view>
+  <slot name="search"></slot>
+</view>

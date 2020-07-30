@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.0.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.shop</groupId>
+	<artifactId>wechat-shop-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>wechat-shop-parent</description>
+
+	<modules>
+		<module>dal</module>
+		<module>common</module>
+		<module>cache</module>
+		<module>model</module>
+		<module>service</module>
+		<module>wechat-shop</module>
+	</modules>
+	<packaging>pom</packaging>
+
+
+	<properties>
+		<shop.version>0.0.1-SNAPSHOT</shop.version>
+		<slf4j.version>1.7.29</slf4j.version>
+		<commons.lang3.version>3.0</commons.lang3.version>
+		<fastjson.version>1.2.31</fastjson.version>
+		<jdom.version>2.0.0</jdom.version>
+		<commons.codec.version>1.6</commons.codec.version>
+		<spring.freemarker.version>1.5.20.RELEASE</spring.freemarker.version>
+	</properties>
+
+	<dependencies>
+		<!--添加lombok支持，可以省掉写get和set方法-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+	</dependencies>
+
+	<!--插件版本控制-->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.jdom</groupId>
+				<artifactId>jdom</artifactId>
+				<version>${jdom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.directory.studio</groupId>
+				<artifactId>org.apache.commons.codec</artifactId>
+				<version>${commons.codec.version}</version>
+			</dependency>
+			<!--使用fastjson来操作json数据-->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons.lang3.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>${slf4j.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-freemarker</artifactId>
+				<version>${spring.freemarker.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.shop</groupId>
+				<artifactId>model</artifactId>
+				<version>${shop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.shop</groupId>
+				<artifactId>common</artifactId>
+				<version>${shop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.shop</groupId>
+				<artifactId>dal</artifactId>
+				<version>${shop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.shop</groupId>
+				<artifactId>service</artifactId>
+				<version>${shop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.shop</groupId>
+				<artifactId>cache</artifactId>
+				<version>${shop.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+</project>

@@ -1,0 +1,204 @@
+page{  
+  background: #f3f3f3;
+  /* font-size: 37.5px;  */
+}  
+.lanzi{
+  width: 350rpx;
+  height: 350rpx;
+}
+ .column image {  
+     width:33rpx;  
+     height:35rpx;  
+     display:inline-block;  
+     overflow:hidden;  
+     float:right;  
+     margin-top: -40rpx;  
+     margin-left:400rpx;
+}
+.nocart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+.select{
+  display: flex;
+  font-size: 32rpx;
+}
+.jian{
+  width: 30rpx;
+  height: 30rpx;
+  background-color: #f5f5f5;
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:5rpx;
+  color: #989898; 
+}
+ .J-shopping-cart-empty{    
+     margin: 0;    
+     padding: 0;    
+     border: 0;    
+     font: inherit;    
+     font-size: 100%;    
+     vertical-align: baseline;
+}
+.shopping-cart-empty {   
+    height: 250px;    
+    padding-bottom: 1.6rem;     
+    text-align: center;    
+    position: relative;
+} 
+.shopping-cart-empty .bg{    
+    position: absolute;    
+    width: 16.29333rem;    
+    height: 6.73333rem;    
+    left: 50%;    
+    -webkit-transform: translateX(-50%);    
+    transform: translateX(-50%);      
+    background-size: 100%;    
+    top: 0;
+} 
+.shopping-cart-empty .cart{        
+    width: 5.83333rem;    
+    height: 7.46rem;    
+    background-size: 100%;    
+    margin: 0 auto;
+}  
+.shopping-cart-empty .button {   
+    width: 8.46667rem;    
+    height: 1.5rem;    
+    display: block;    
+    margin: 20rpx auto;
+}
+.empty-text {    
+    font-size: .64667rem;    
+    color: #222;    
+    margin-top: .53333rem;    
+    line-height: .74667rem;    
+    font-weight: 400;
+}
+.button-primary {  
+   width: 100rpx;
+   height: 40rpx;  
+    background-color: #de3c96;    
+    color: #eee;    
+    text-align: center;    
+    border-radius: 20rpx;    
+} 
+ 
+.cart_container {  
+    display: flex;  
+    flex-direction: row;  
+    background-color: #FFFFFF;  
+   margin-top: 10px;
+   border-radius: 10rpx;
+   padding-bottom: 10rpx;
+}
+.scroll {   
+    margin-bottom: 120rpx; 
+}
+.column {  
+    display: flex;  
+    flex-direction: column;
+}
+.row { 
+    display: flex;  
+    flex-direction: row;   
+    align-items: center;
+}
+.sku {  
+    margin-left: 100rpx;  
+    position: absolute;  
+    right: 30rpx;  
+    margin-top: 30rpx; 
+}
+.sku-price {  
+    color: red;  
+    position: relative;   
+    margin-top: 30rpx; 
+}
+.price {  
+    color: red;  
+    position: relative;
+}
+.title {  
+    font-size: 32rpx;  
+    margin-top: 40rpx;
+    display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+}
+.small_text {  
+    font-size: 28rpx;  
+    margin-right: 40rpx;  
+    margin-left: 25rpx;
+}
+.item-select {  
+    width: 40rpx;  
+    height: 40rpx;  
+    margin-top: 90rpx;  
+    margin-left: 20rpx;
+}
+.item-allselect {  
+    width: 40rpx;  
+    height: 40rpx; 
+    margin-left: 20rpx;   
+    margin-top:25rpx;   
+}
+.box{
+  width: 210rpx;
+} 
+.item-image {  
+    width: 180rpx;  
+    height: 180rpx;  
+    margin: 20rpx;
+} 
+.bottom_line {  
+    width: 100%;  
+    height: 2rpx;  
+    background: lightgray;
+} 
+.bottom_total {  
+    position: fixed;  
+    display: flex;  
+    flex-direction: column;  
+    bottom: 0;  
+    width: 100%;  
+    height: 120rpx;  
+    line-height: 120rpx;  
+    background: white;  /* margin-top: 300rpx; */
+    border-top: 1rpx solid #ccc;  z-index: 99;
+}
+.button-red {  
+    background-color: #f0145a; 
+    position: fixed;  
+    right: 20rpx;  
+    color: white;  
+    text-align: center;  
+    display: inline-block;  
+    font-size: 30rpx;  
+    width: 120rpx;  
+    height: 50rpx;  
+    padding:5rpx;
+    border-radius: 30rpx;
+    line-height: 50rpx;  
+}
+.go{
+  margin-top: 40rpx;
+   background-color: #f0145a; 
+    color: white;  
+    text-align: center;  
+    display: inline-block;  
+    font-size: 30rpx;  
+    width: 120rpx;  
+    height: 50rpx;  
+    padding:5rpx;
+    border-radius: 30rpx;
+    line-height: 50rpx;  
+}
+.cartWrap{
+  padding: 10rpx 20rpx;
+}

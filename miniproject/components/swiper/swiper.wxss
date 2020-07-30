@@ -1,0 +1,5 @@
+/* components/swiper/swiper.wxss */
+.swiper{
+  width: 100%;
+  height: 100%;
+}
