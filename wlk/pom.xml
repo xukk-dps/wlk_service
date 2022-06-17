@@ -28,7 +28,7 @@
 		<shop.version>0.0.1-SNAPSHOT</shop.version>
 		<slf4j.version>1.7.29</slf4j.version>
 		<commons.lang3.version>3.0</commons.lang3.version>
-		<fastjson.version>1.2.31</fastjson.version>
+		<fastjson.version>1.2.83</fastjson.version>
 		<jdom.version>2.0.0</jdom.version>
 		<commons.codec.version>1.6</commons.codec.version>
 		<spring.freemarker.version>1.5.20.RELEASE</spring.freemarker.version>
